@@ -168,9 +168,6 @@
     <Compile Include="Resource\Api.cs" />
     <Compile Include="Resource\APPTheme.cs" />
     <Compile Include="Model\Switch.cs" />
-    <Compile Include="Pages\Sign.xaml.cs">
-      <DependentUpon>Sign.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\FengCaiViewModel.cs" />
     <Compile Include="ViewModel\FirstPageViewModel.cs" />
@@ -236,10 +233,6 @@
     <Page Include="Pages\StrategyPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\Sign.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Page Include="Styles\ExpandingStyle.xaml">
       <SubType>Designer</SubType>
