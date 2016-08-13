@@ -241,9 +241,12 @@
             <Setter Property="Padding" Value="12,5,0,7"/>
             <Setter Property="MinWidth" Value="{ThemeResource ComboBoxThemeMinWidth}"/>
             <Setter Property="Foreground" Value="#007ACC"/>
-            <Setter Property="Background" Value="Azure"/>
-            <Setter Property="BorderBrush" Value="{ThemeResource SystemControlForegroundBaseMediumLowBrush}"/>
-            <Setter Property="BorderThickness" Value="{ThemeResource ComboBoxBorderThemeThickness}"/>
+            <!--<Setter Property="Background" Value="Azure"/>-->
+            <Setter Property="Background" Value="Transparent"/>
+            <!--<Setter Property="BorderBrush" Value="{ThemeResource SystemControlForegroundBaseMediumLowBrush}"/>-->
+            <Setter Property="BorderBrush" Value="#cccccc"/>
+            <!--<Setter Property="BorderThickness" Value="{ThemeResource ComboBoxBorderThemeThickness}"/>-->
+            <Setter Property="BorderThickness" Value="0.5"/>
             <Setter Property="TabNavigation" Value="Once"/>
             <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled"/>
             <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
@@ -487,8 +490,8 @@
                                    Margin="0 10 0 10" HorizontalAlignment="Center"/>
                         <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto" Grid.ColumnSpan="2"
                                       BorderBrush="#FF877676" BorderThickness="0 0.5 0 0">
-                            <local:PiePlotter x:Name="piePlotter0" Width="400" Height="400"
-                                              PieWidth="330" HoleSize="0.15" Margin="30 20 30 0"/>
+                            <local:PiePlotter x:Name="piePlotter0" Width="400" Height="400"                                
+                                   PieWidth="330" HoleSize="0.15" Margin="30 20 30 0"/>
                         </ScrollViewer>
                     </Grid>
                 </PivotItem>
