@@ -57,7 +57,7 @@ namespace RedRock_Freshman.Pages
             if (myCollectionView == null)
                 return;
             double halfWidth = PieWidth / 2;
-           // double innerRadius = halfWidth * HoleSize;
+            //double innerRadius = halfWidth * HoleSize;
             double innerRadius = 50;
             double total = 0;
             foreach (PieDataItem item in myCollectionView)
@@ -78,7 +78,7 @@ namespace RedRock_Freshman.Pages
                     CentreX = halfWidth,
                     CentreY = halfWidth,
                     //PushOut = (selectedItem ? 0.5 : 0),
-                    PushOut = (selectedItem ? 10 : 0),                   
+                    PushOut = (selectedItem ? 10 : 0),
                     WedgeAngle = wedgeAngle,
                     PieceValue = item.Value,
                     RotationAngle = accumulativeAngle,

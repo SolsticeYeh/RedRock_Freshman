@@ -433,6 +433,7 @@
         <!--数据页面-->
         <Grid Grid.Row="1">
             <Pivot x:Name="pivot" Style="{StaticResource BigDataPivotStyle}" SelectionChanged="pivot_SelectionChanged">
+                <!--男女比例-->
                 <PivotItem>
                     <PivotItem.Header>
                         <Grid Height="50" Width="75" BorderBrush="{Binding Source={StaticResource APPTheme},Path=APP_Color_Brush}" BorderThickness="0,0,0,2">
@@ -491,11 +492,12 @@
                         <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto" Grid.ColumnSpan="2"
                                       BorderBrush="#FF877676" BorderThickness="0 0.5 0 0">
                             <local:PiePlotter x:Name="piePlotter0" Width="400" Height="400"                                
-                                   PieWidth="330" HoleSize="0.15" Margin="30 20 30 0"/>
+                                   PieWidth="400" HoleSize="0.15" Margin="0 20 0 0"/>
                         </ScrollViewer>
                     </Grid>
                 </PivotItem>
 
+                <!--最难科目-->
                 <PivotItem>
                     <PivotItem.Header>
                         <Grid Height="50" Width="75" BorderBrush="{Binding Source={StaticResource APPTheme},Path=APP_Color_Brush}" BorderThickness="0,0,0,2">
@@ -539,11 +541,12 @@
                         <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto" Grid.ColumnSpan="2"
                                       BorderBrush="#FF877676" BorderThickness="0 0.5 0 0">
                             <local:PiePlotter x:Name="piePlotter1" Width="400" Height="400"
-                                              PieWidth="330" HoleSize="0.15" Margin="30 20 30 0"/>
+                                              PieWidth="400" HoleSize="0.15" Margin="0 20 0 0"/>
                         </ScrollViewer>
                     </Grid>
                 </PivotItem>
 
+                <!--毕业去向-->
                 <PivotItem>
                     <PivotItem.Header>
                         <Grid Height="50" Width="75" BorderBrush="{Binding Source={StaticResource APPTheme},Path=APP_Color_Brush}" BorderThickness="0,0,0,2">
@@ -583,12 +586,12 @@
                             <TextBlock x:Name="Road4" Text="自由职业: " Foreground="#FF247078"/>
                         </StackPanel>
                         <TextBlock x:Name="TextBlock3" Grid.Row="1" Grid.ColumnSpan="2"
-                                   FontSize="15" Foreground="#007ACC" 
+                                   FontSize="15" Foreground="#FF007ACC" 
                                    Margin="0 30 0 10" HorizontalAlignment="Center"/>
                         <ScrollViewer VerticalScrollBarVisibility="Auto" BorderBrush="#FF877676" 
                                       BorderThickness="0 0.5 0 0" Grid.ColumnSpan="2" Grid.Row="2">
                             <local:PiePlotter x:Name="piePlotter2" Width="400" Height="400"
-                                              PieWidth="330" HoleSize="0.15" Margin="30 20 30 0"/>
+                                              PieWidth="400" HoleSize="0.15" Margin="0 20 0 0"/>
                         </ScrollViewer>
                     </Grid>
                 </PivotItem>

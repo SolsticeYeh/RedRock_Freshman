@@ -9,5 +9,7 @@
     d:DesignHeight="480"
     d:DesignWidth="480">
 
-    <Grid x:Name="LayoutRoot"></Grid>
+    <Grid>
+        <Grid x:Name="LayoutRoot" HorizontalAlignment="Center" VerticalAlignment="Center"></Grid>
+    </Grid>
 </UserControl>
