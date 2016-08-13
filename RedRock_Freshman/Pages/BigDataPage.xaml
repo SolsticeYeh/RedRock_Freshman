@@ -478,11 +478,11 @@
                         <StackPanel Grid.Row="0" Grid.Column="1">
                             <StackPanel Margin="0 0 0 -10">
                                 <TextBlock Text="男生:" Grid.Column="1"/>
-                                <TextBlock x:Name="Male" Text="人数及比例" TextTrimming="CharacterEllipsis" FontSize="20"/>
+                                <TextBlock x:Name="Male" Text="人数及比例" Margin="0 5 0 0" TextTrimming="CharacterEllipsis" FontSize="18"/>
                             </StackPanel>
                             <StackPanel Margin="0 20 0 0" BorderThickness="0 0.5 0 0" BorderBrush="#FFB4A2A2">
                                 <TextBlock Text="女生:" Grid.Column="1" Margin="0 9 0 0"/>
-                                <TextBlock x:Name="Female" Text="人数及比例" TextTrimming="CharacterEllipsis" FontSize="20"/>
+                                <TextBlock x:Name="Female" Text="人数及比例" Margin="0 5 0 0" TextTrimming="CharacterEllipsis" FontSize="18"/>
                             </StackPanel>
                         </StackPanel>
                         <TextBlock x:Name="TextBlock1" Grid.Row="1" Grid.ColumnSpan="2"
