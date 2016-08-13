@@ -453,7 +453,7 @@
                             <ColumnDefinition Width="1.8*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-                        <StackPanel Grid.Row="0" Grid.Column="0">
+                        <StackPanel Grid.Row="0" Grid.Column="0" Margin="10 0 0 0">
                             <ComboBox Header="请选择院系" x:Name="comboBox0" Grid.Row="0"
                                   DropDownClosed="comboBox0_DropDownClosed" 
                                   Style="{StaticResource BigDataComboBox}">
@@ -475,7 +475,7 @@
                                 </ComboBox.ItemTemplate>
                             </ComboBox>
                         </StackPanel>
-                        <StackPanel Grid.Row="0" Grid.Column="1">
+                        <StackPanel Grid.Row="0" Grid.Column="1" Margin="0 0 10 0">
                             <StackPanel Margin="0 0 0 -10">
                                 <TextBlock Text="男生:" Grid.Column="1"/>
                                 <TextBlock x:Name="Male" Text="人数及比例" TextTrimming="CharacterEllipsis" FontSize="20"/>
@@ -516,7 +516,7 @@
                             <ColumnDefinition Width="1.8*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-                        <StackPanel Grid.Row="0" Grid.Column="0">
+                        <StackPanel Grid.Row="0" Grid.Column="0" Margin="10 0 0 0">
                             <ComboBox Header="请选择学院" x:Name="comboBox2"
                                   DropDownClosed="comboBox2_DropDownClosed" 
                                   Style="{StaticResource BigDataComboBox}">
@@ -527,7 +527,7 @@
                                 </ComboBox.ItemTemplate>
                             </ComboBox>
                         </StackPanel>
-                        <StackPanel Grid.Row="0" Grid.Column="1">
+                        <StackPanel Grid.Row="0" Grid.Column="1" Margin="0 0 10 0">
                             <TextBlock Text="科目难度排行："/>
                             <TextBlock x:Name="Sub1" Foreground="#FFCF4848"/>
                             <TextBlock x:Name="Sub2" Foreground="#FFBC33DA"/>
@@ -564,7 +564,7 @@
                             <ColumnDefinition Width="1.8*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-                        <StackPanel Grid.Row="0" Grid.Column="0">
+                        <StackPanel Grid.Row="0" Grid.Column="0" Margin="10 0 0 0">
                             <ComboBox Header="请选择学院" x:Name="comboBox3"
                                   DropDownClosed="comboBox3_DropDownClosed" 
                                   Style="{StaticResource BigDataComboBox}">
@@ -575,12 +575,12 @@
                                 </ComboBox.ItemTemplate>
                             </ComboBox>
                         </StackPanel>
-                        <StackPanel Grid.Row="0" Grid.Column="1">
+                        <StackPanel Grid.Row="0" Grid.Column="1" Margin="0 0 10 0">
                             <TextBlock Text="毕业走向："/>
                             <TextBlock x:Name="Road1" Text="就业: " Foreground="#FFCF4848"/>
                             <TextBlock x:Name="Road2" Text="出国留学: " Foreground="#FFBC33DA"/>
                             <TextBlock x:Name="Road3" Text="待业: " Foreground="#FF48E625"/>
-                            <TextBlock x:Name="Road4" Text="自由职业: " Foreground="#FF48E625"/>
+                            <TextBlock x:Name="Road4" Text="自由职业: " Foreground="#FF247078"/>
                         </StackPanel>
                         <TextBlock x:Name="TextBlock3" Grid.Row="1" Grid.ColumnSpan="2"
                                    FontSize="15" Foreground="#007ACC" 
