@@ -355,7 +355,7 @@
                                 <TextBlock Grid.Row="0" Text="安全须知" FontSize="18" Foreground="#333333" Margin="15,14,0,15"/>
                                 <TextBlock Name="anquan" Margin="15,0,15,14" LineHeight="26" FontSize="{Binding Source={StaticResource APPTheme},Path=Second_Content_Size}"
                                       Grid.Row="1" Foreground="{Binding Source={StaticResource APPTheme},Path=Gary_Color_Brush}" Text="{Binding Anquan,Converter={StaticResource expandingConverter0},Mode=OneWay}" TextWrapping="Wrap"/>
-                                <Button Name="anquanButton" Margin="0,0,15,14" HorizontalAlignment="Right"  Foreground="Blue" FontSize="{Binding Source={StaticResource APPTheme},Path=Second_Content_Size}" Grid.Row="1" VerticalAlignment="Bottom" Click="anquanButton_Click" Style="{StaticResource ExpandingButton}">
+                                <Button Name="anquanButton" Margin="0,0,15,14" HorizontalAlignment="Right"  Foreground="LightBlue" FontSize="{Binding Source={StaticResource APPTheme},Path=Second_Content_Size}" Grid.Row="1" VerticalAlignment="Bottom" Click="anquanButton_Click" Style="{StaticResource ExpandingButton}">
                                     <Button.Content>
                                         <StackPanel Orientation="Horizontal">
                                             <TextBlock Text="{Binding Text[0]}"/>
@@ -374,7 +374,7 @@
                                 <TextBlock Grid.Row="0" Text="入学须知" FontSize="18" Foreground="#333333" Margin="15,14,0,15"/>
                                 <TextBlock Name="ruxue" Margin="15,0,15,14" LineHeight="26" FontSize="{Binding Source={StaticResource APPTheme},Path=Second_Content_Size}" 
                                     Grid.Row="1" Foreground="{Binding Source={StaticResource APPTheme},Path=Gary_Color_Brush}" Text="{Binding Ruxue,Converter={StaticResource expandingConverter1}}" TextWrapping="Wrap"/>
-                                <Button Name="ruxueButton" Margin="0,0,15,14" HorizontalAlignment="Right"  Foreground="Blue" FontSize="{Binding Source={StaticResource APPTheme},Path=Second_Content_Size}" Grid.Row="1" VerticalAlignment="Bottom" Click="ruxueButton_Click" Style="{StaticResource ExpandingButton}">
+                                <Button Name="ruxueButton" Margin="0,0,15,14" HorizontalAlignment="Right"  Foreground="LightBlue" FontSize="{Binding Source={StaticResource APPTheme},Path=Second_Content_Size}" Grid.Row="1" VerticalAlignment="Bottom" Click="ruxueButton_Click" Style="{StaticResource ExpandingButton}">
                                     <Button.Content>
                                         <StackPanel Orientation="Horizontal">
                                             <TextBlock Text="{Binding Text[1]}"/>
@@ -394,7 +394,7 @@
                                 <TextBlock Grid.Row="0" Text="奖学金设置" FontSize="18" Foreground="#333333" Margin="15,14,0,15"/>
                                 <TextBlock Name="jiangxuejin" Margin="15,0,15,14" LineHeight="26" FontSize="{Binding Source={StaticResource APPTheme},Path=Second_Content_Size}" 
                                       Grid.Row="1" Foreground="{Binding Source={StaticResource APPTheme},Path=Gary_Color_Brush}" Text="{Binding Jiangxuejin,Converter={StaticResource expandingConverter2}}" TextWrapping="Wrap"/>
-                                <Button Name="jiangxuejinButton" Margin="0,0,15,14" HorizontalAlignment="Right"  Foreground="Blue" FontSize="{Binding Source={StaticResource APPTheme},Path=Second_Content_Size}" Grid.Row="1" VerticalAlignment="Bottom" Click="jiangxuejinButton_Click" Style="{StaticResource ExpandingButton}">
+                                <Button Name="jiangxuejinButton" Margin="0,0,15,14" HorizontalAlignment="Right"  Foreground="LightBlue" FontSize="{Binding Source={StaticResource APPTheme},Path=Second_Content_Size}" Grid.Row="1" VerticalAlignment="Bottom" Click="jiangxuejinButton_Click" Style="{StaticResource ExpandingButton}">
                                     <Button.Content>
                                         <StackPanel Orientation="Horizontal">
                                             <TextBlock Text="{Binding Text[2]}"/>
@@ -416,7 +416,7 @@
                                 <WebView Name="JDhtml" Source="ms-appx-web:///Assets/jidian.html" Grid.Row="0" Visibility="Collapsed"/>
                                 <TextBlock Name="xueshengshouce" Margin="15,0,15,14" LineHeight="26" Grid.Row="2" FontSize="{Binding Source={StaticResource APPTheme},Path=Second_Content_Size}"  
                                        Foreground="{Binding Source={StaticResource APPTheme},Path=Gary_Color_Brush}" Text="{Binding Xueshengshouce,Converter={StaticResource expandingConverter3}}" TextWrapping="Wrap"/>
-                                <Button Grid.Row="2" Margin="0,0,15,14" Name="xueshengshouceButton" HorizontalAlignment="Right"  Foreground="Blue" FontSize="{Binding Source={StaticResource APPTheme},Path=Second_Content_Size}" VerticalAlignment="Bottom" Click="xueshengshouceButton_Click" Style="{StaticResource ExpandingButton}">
+                                <Button Grid.Row="2" Margin="0,0,15,14" Name="xueshengshouceButton" HorizontalAlignment="Right"  Foreground="LightBlue" FontSize="{Binding Source={StaticResource APPTheme},Path=Second_Content_Size}" VerticalAlignment="Bottom" Click="xueshengshouceButton_Click" Style="{StaticResource ExpandingButton}">
                                     <Button.Content>
                                         <StackPanel Orientation="Horizontal">
                                             <TextBlock Text="{Binding Text[3]}"/>
@@ -483,7 +483,7 @@
                                             <ColumnDefinition Width="auto"/>
                                             <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
-                                        <Rectangle   Height="80" Width="80" RadiusX="13" RadiusY="13" Tapped="Rectangle_Tapped">
+                                        <Rectangle  VerticalAlignment="Top" Margin="0 20 0 0" Height="80" Width="80" RadiusX="13" RadiusY="13" Tapped="Rectangle_Tapped">
                                             <Rectangle.Fill>
                                                 <ImageBrush x:Name="SSImage" ImageSource="{x:Bind Uri,Mode=OneWay}" Stretch="Uniform">
                                                 </ImageBrush>
@@ -715,7 +715,7 @@
                                         <ColumnDefinition Width="auto"/>
                                         <ColumnDefinition/>
                                     </Grid.ColumnDefinitions>
-                                    <Rectangle   Height="80" Width="80" RadiusX="13" RadiusY="13" Tapped="Rectangle_Tapped">
+                                    <Rectangle VerticalAlignment="Top" Margin="0 20 0 0"  Height="80" Width="80" RadiusX="13" RadiusY="13" Tapped="Rectangle_Tapped">
                                         <Rectangle.Fill>
                                             <ImageBrush  ImageSource="{x:Bind Uri,Mode=OneWay}" Stretch="Uniform">
                                             </ImageBrush>

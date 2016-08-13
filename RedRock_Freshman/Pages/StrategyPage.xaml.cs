@@ -324,6 +324,7 @@ namespace RedRock_Freshman.Pages
         }
         private async void qinshi_Get()
         {
+            //TODO:有个X 记得处理
             string content = await qsHttpClient();
             JObject json = JObject.Parse(content);
             int total = int.Parse(json["total"].ToString());
@@ -441,7 +442,7 @@ namespace RedRock_Freshman.Pages
             StorageFile xueshengshouce_File = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///Notepad/xueshengshouce.txt", UriKind.Absolute));
             viewmodel.Xueshengshouce = await FileIO.ReadTextAsync(xueshengshouce_File);
         }
-        private void LXQ_qqGroup()
+        private async  void LXQ_qqGroup()
         {
             using (var conn = Model.getDB.GetDblxqConnection())
             {
@@ -458,9 +459,54 @@ namespace RedRock_Freshman.Pages
                 }
 
             }
+            //LXQString = await LXQ_qqGet();
+        }
+
+        //TODO:两个异步方法 暂时没用 ui不更新
+        public static async Task<string> LXQ_qqGet()
+        {
+            string tempString="";
+            return await Task.Run(() =>
+           {
+               using (var conn = Model.getDB.GetDblxqConnection())
+               {
+                   int i = 0;
+                   var query = conn.Table<LXQ>();
+                   foreach (var q in query)
+                   {
+                       tempString += q.name + "   " + q.qq_num;
+                       if (i < query.Count() - 1)
+                           tempString += '\n';
+                       i++;
+                   }
+               }             
+                   return tempString;
+           });           
+        }
+
+        public static async Task<string> XSQ_qqGet()
+        {
+            string tempString = "";
+            return await Task.Run(() =>
+            {
+                using (var conn = Model.getDB.GetDbxsqConnection())
+                {
+                    int i = 0;
+                    var query = conn.Table<XYXS>();
+                    foreach (var q in query)
+                    {
+                        tempString += q.name + "   " + q.qq_num;
+                        if (i < query.Count() - 1)
+                            tempString += '\n';
+                        i++;
+                    }
+                }
+                return tempString;
+            });
 
         }
-        private void XSQ_qqGroup()
+
+        private async void XSQ_qqGroup()
         {
             using (var conn = Model.getDB.GetDbxsqConnection())
             {
@@ -474,7 +520,7 @@ namespace RedRock_Freshman.Pages
                     i++;
                 }
             }
-
+            //XSQString = await XSQ_qqGet();
         }
         Point Point_new = new Point();
         Point Point_old = new Point();

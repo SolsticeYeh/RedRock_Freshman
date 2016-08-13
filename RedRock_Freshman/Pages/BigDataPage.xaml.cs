@@ -113,10 +113,10 @@ namespace RedRock_Freshman.Pages
             try
             {
                 TextBlock3.Text = comboBox3.SelectedItem.ToString() + "的毕业去向饼图如下";
-                Road1.Text = "就业: " + Switch.CareerRatioSwitch(comboBox3.SelectedItem.ToString()).Employed.ToString() + "%";
-                Road2.Text = "出国留学: " + Switch.CareerRatioSwitch(comboBox3.SelectedItem.ToString()).Abroad.ToString() + "%";
-                Road3.Text = "待业: " + Switch.CareerRatioSwitch(comboBox3.SelectedItem.ToString()).Unemployed.ToString() + "%";
-                Road4.Text = "自由职业: " + Switch.CareerRatioSwitch(comboBox3.SelectedItem.ToString()).FreeWork.ToString() + "%";
+                Road1.Text += Switch.CareerRatioSwitch(comboBox3.SelectedItem.ToString()).Employed.ToString() + "%";
+                Road2.Text += Switch.CareerRatioSwitch(comboBox3.SelectedItem.ToString()).Abroad.ToString() + "%";
+                Road3.Text += Switch.CareerRatioSwitch(comboBox3.SelectedItem.ToString()).Unemployed.ToString() + "%";
+                Road4.Text += Switch.CareerRatioSwitch(comboBox3.SelectedItem.ToString()).FreeWork.ToString() + "%";
             }
             catch
             {
